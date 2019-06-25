@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML hyperlinks</title>
+</head>
+<body>
+    <a href="HTMLtables.html" target="_blank">Name of hyperlink</a> <!-- hyperlinks tags with attribute href - url -->
+    <h1>My site portfolio</h1>
+    <div>
+        <h2>My contacts</h2>
+        <div>
+            <h3>I am in a social networks</h3>
+            <ul>
+                <li><a href="https://vk.com/feed" target="_blank" title="vk">I am in VK</a>
+                </li>
+                <li><a href="#">I am in FB</a></li>
+                <li><a href="#">I am in TW</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <h2>About me</h2>
+        <div>
+            <img src="https://picsum.photos/id/2/200/200" alt="My avatar" title="Title of img"
+            width="400" height="400" border="2">
+        </div>
+        <div>
+            <h3>My biography</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                A eum in labore magnam maxime modi nihil, nostrum ratione tempore!
+                Accusamus architecto blanditiis commodi culpa doloremque illum ipsa iste laboriosam nihil,
+                officiis quam quo quos saepe, sed sit tenetur vero voluptatibus.
+                Amet consequuntur cupiditate, dolorum eum, hic id illum incidunt iste molestiae necessitatibus non
+                possimus quisquam sapiente sint sit sunt tempora tenetur ullam vel voluptas voluptate voluptatibus
+                voluptatum! Assumenda ipsa itaque maiores ratione suscipit. Ab, architecto commodi dolores et
+                exercitationem fugit quibusdam reprehenderit sapiente voluptatibus. At aut consequatur culpa, cumque
+                facilis, ipsa, modi placeat quo rem repellat saepe suscipit ullam vero?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi impedit nisi voluptatem. Aliquam amet
+                aperiam architecto enim est incidunt natus quaerat qui quia voluptas.
+                Dicta dolorem nemo nulla placeat quasi.</p>
+        </div>
+        <div>
+            <h2>My stats</h2>
+            <table align="center" border="2">
+                <tr>
+                    <td>View of project</td>
+                    <td>Close of</td>
+                    <td>Cell</td>
+                </tr>
+                <tr>
+                    <td>Statics</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Adaptive</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h1 class="section-title" align="center"></h1>
+            <hr color="red">
+        </div>
+    </div>
+    <div>
+        <form action="auth.php" method="post">
+            <input type="text" name="name" id="name" placeholder="Input name" >
+            <input type="password" name="pswrd" id="pswrd" placeholder="Input password">
+            <input type="submit" id="submit" placeholder="Push">
+            <input type="reset" value="Reset">
+        </form>
+        <hr color="red">
+    </div>
+    <div>
+        <h2 class="section-title">Сделать заказ</h2>
+        <form action="order.php" method="post">
+            <div>
+                <label for="client_name">Name of Client</label>
+                <input type="text" id="client_name" name="client_name" placeholder="Input name">
+            </div>
+            <div>
+                <label for="client_email">Email of Client</label>
+                <input type="text" id="client_email" name="client_email" placeholder="Input email">
+            </div>
+            <div>
+                <label>
+                    <span>Male</span>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>Additional features</span>
+                        <input type="checkbox" name="extra" value="adaptive">
+                        <span>Adaptive</span>
+                        <input type="checkbox" name="extra" value="hosting" checked>
+                        <!-- checked is tag for settings by default -->
+                        <span>Install to hosting</span>
+                        <input type="checkbox" name="extra" value="support">
+                        <span>Further support</span>
+                        <input type="checkbox" name="extra" value="admin">
+                        <span>Install admin panel</span>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>Type of site</span>
+                    <select name="type" multiple>
+                        <option value="eshop">Eshop</option>
+                        <option value="landing">Landing</option>
+                        <option value="card">Card-site</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>Download blueprint</span>
+                    <input type="file" name="file">
+                </label>
+            </div>
+            <div>
+                <input type="submit" name="file">
+                <button name="submit">Submit file</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
